@@ -29,7 +29,8 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Container */
@@ -96,7 +97,6 @@ p {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item.current {
@@ -104,7 +104,7 @@ p {
   position: relative;
 }
 
-.nav-item.current::after {
+.nav-item::after {
   content: "";
   position: absolute;
   left: 0;
@@ -239,7 +239,7 @@ p {
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
-  border: 1px solid #8e8f99;
+  border: 1px solid #e7e9fc;
 }
 
 .preferences-item-title {
@@ -311,7 +311,6 @@ p {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .team-socials {
@@ -377,9 +376,10 @@ p {
   transform: translateY(0);
 }
 
-.portfolio-list-item:hover {
+.portfolio-list-item:hover .portfolio-image-paragraph {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0);
 }
 
 .portfolio-list-image {
