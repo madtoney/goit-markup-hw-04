@@ -29,8 +29,7 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 /* Container */
@@ -97,12 +96,12 @@ p {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item.current {
   color: #404bbf;
   position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item.current::after {
@@ -240,7 +239,7 @@ p {
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid #8e8f99;
 }
 
 .preferences-item-title {
@@ -312,6 +311,7 @@ p {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-socials {
@@ -373,6 +373,10 @@ p {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio-list-item:hover .portfolio-image-paragraph {
+  transform: translateY(0);
+}
+
 .portfolio-list-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -381,10 +385,6 @@ p {
 .portfolio-list-image {
   position: relative;
   overflow: hidden;
-}
-
-.portfolio-list-image:hover .portfolio-image-paragraph {
-  transform: translateY(0);
 }
 
 .portfolio-image-paragraph {
